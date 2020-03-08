@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Calculate Postage Form</title>
+</head>
+<!-- Calculate postage required for a single piece of retail first-class mail. -->
+<body>
+	<h1>Calculate Postage Form</h1>
+    <form action="/postage" method="get">
+        <label>Weight of the Item</label>
+        <input type="text" name="weight">
+		<select name="operation">
+			<option>Letters (Stamped)</option>
+			<option>Letters (Metered)</option>
+			<option>Large Envelopes(Flats)</option>
+			<option>First-Class Package Service-Retail</option>
+		</select>
+
+
+		<!-- <input type="text" name="operand2"> -->
+
+		<br><br>
+		<input type="submit" value="Get Result">
+
+	</form>
+</body>
+</html>

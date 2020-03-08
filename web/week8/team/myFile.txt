@@ -1,0 +1,6 @@
+this
+file
+has 
+six
+new
+lines

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <% include ../partials/header.ejs %>
+</head>
+
+<body>
+
+<% include ../partials/nav.ejs %>
+
+<div class="container">
+<h2>Math Calculator</h2>
+
+<form action="/math" method="GET">
+    <label for="num1">First Number: </label>
+    <input id="num1" type="text" name="num1" >
+    <br>
+    <label for="num2">Second Number: </label>
+    <input id="num2" type="text" name="num2">
+    <br>
+    <label for="sign">Operand: </label>
+    <input id="sign" type="text" name="sign" >
+    <br>
+    <input type="submit" value="Compute">
+</form>
+</div>
+
+</body>
+</html>
