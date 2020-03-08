@@ -24,6 +24,6 @@ function onRequest(req, res) {
     }
 
 var server = http.createServer(onRequest);
-server.listen(5000);
-console.log("server is listening on 8888");
+server.listen(process.env.port);
+console.log("server is listening on port");
 
