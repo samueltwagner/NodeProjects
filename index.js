@@ -1,5 +1,6 @@
 // Require the "http" package
 var http = require('http');
+var port = process.env.PORT || 80;
 
 // Use the createServer method of your http server object to handle requests.
 function onRequest(req, res) {   
@@ -24,6 +25,6 @@ function onRequest(req, res) {
     }
 
 var server = http.createServer(onRequest);
-server.listen(process.env.port);
+server.listen(port);
 console.log("server is listening on port");
 
