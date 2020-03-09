@@ -13,6 +13,10 @@ app.set('view engine', 'ejs');
 // handleMath function below
 app.get('/postage', calculateRate);
 
+app  .get('/' , function(req , res){
+    res.sendFile('form.html', { root: __dirname + "/public"});
+  })
+  
 // start the server listening
 app.listen(port, function() {
   console.log('Node app is running on port', port);
