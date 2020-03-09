@@ -13,10 +13,10 @@ app.set('view engine', 'ejs');
 // handleMath function below
 app.get('/postage', calculateRate);
 
-app  .get('/' , function(req , res){
+app.get('/' , function(req , res){
     res.sendFile('form.html', { root: __dirname + "/public"});
   })
-  
+
 // start the server listening
 app.listen(port, function() {
   console.log('Node app is running on port', port);
@@ -148,6 +148,6 @@ function computeOperation(response, option, weight) {
 
 	// Render the response, using the EJS page "result.ejs" in the pages directory
 	// Makes sure to pass it the parameters we need.
-	response.render('views/result', params);
+	response.render('pages/result', params);
 
 }
