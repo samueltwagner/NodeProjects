@@ -1,6 +1,8 @@
 // Require the "http" package
 var http = require('http');
-var port = process.env.PORT || 80;
+var port = process.env.PORT || 5000;
+var fs = require('fs');
+
 
 // Use the createServer method of your http server object to handle requests.
 function onRequest(req, res) {   
@@ -10,6 +12,12 @@ function onRequest(req, res) {
             res.writeHead(200, {"Content-Type": "application/json"});
             res.write("<h1>Welcome to the Home Page.</h1>");
         }
+        // **********************************
+        //how to do that???
+        else if(req.week9 == "/week9/assignment/app.js"){
+            app.set('views', __dirname + '/views');
+        }
+        //************************************ */
         else if(req.url == "/getData")
         {
             res.writeHead(200, {"Content-Type": "application/json"});
